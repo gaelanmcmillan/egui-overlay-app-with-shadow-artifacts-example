@@ -29,7 +29,8 @@ fn main() -> eframe::Result {
     let native_options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()
             .with_inner_size(egui::vec2(300.0, 200.0))
-            .with_transparent(true),
+            .with_transparent(true)
+            .with_has_shadow(false), // <-- new ViewportBuilder option
         ..Default::default()
     };
 
